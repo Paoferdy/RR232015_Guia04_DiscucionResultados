@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de ventas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <h1 style="text-align: center; font-weight: lighter;">Inventario de productos</h1>
+        <hr>
+        <br>
+        <div class="row">
+            <h2 style="text-align: center; font-weight: lighter;">Nuevo producto:</h2>
+            <hr>
+            <form action="javascript:void(0)" name="frmProductos" id="frmProductos">
+                <input type="text" id="txtNombre" name="txtNombre" placeholder="Nombre del producto">
+                <input type="number" id="txtPrecio" name="txtPrecio" placeholder="Precio Unitario">
+                <input type="number" id="txtCantidad" name="txtCantidad" placeholder="Cantidad de producto">
+                <button type="button" id="btnSubmit" name="btnSubmit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+        <br>
+        <div class="row">
+            <h2 style="text-align: center; font-weight: lighter;">Inventario existente:</h2>
+            <hr>
+            <table border="1">
+                <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio Unitario</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+                <tbody id="tablaResultados" name="tablaResultados" >
+
+                </tbody>
+                
+
+            </table>
+            <div name="boxTotal" id="boxTotal">
+
+            </div>
+
+        </div>
+    </div>
+    <script src="js/ventas.js"></script>
+    
+</body>
+</html>
